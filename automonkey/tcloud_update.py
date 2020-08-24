@@ -18,7 +18,8 @@ class TCloud(object):
         self.task_id = task_id
         self.monkey_id = monkey_id
         self.device_id = device_id
-        self.tcloud_url = tcloud_url if tcloud_url is not None else DefaultConfig.TCLOUD_URL
+        # self.tcloud_url = tcloud_url if tcloud_url is not None else DefaultConfig.TCLOUD_URL
+        self.tcloud_url = "http://localhost:8081"
         self.anr = 0
         self.crash = 0
         self.process = process

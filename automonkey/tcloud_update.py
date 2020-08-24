@@ -355,6 +355,9 @@ class TCloud(object):
 
             response = requests.request(method='GET', url=request_url)
             if response.ok:
+
+
+
                 logger.info(response.json())
                 return response.json().get('data').get('cancel_status')
         except Exception as e:
